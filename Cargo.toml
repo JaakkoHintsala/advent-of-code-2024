@@ -1,6 +1,9 @@
-[package]
-name = "advent-of-code-2024"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+resolver = "2"
 
-[dependencies]
+members = [ "day-1-first",
+    "day-1-part-1", 
+]
+
+[workspace.dependencies]
+project-root = "0.2.2"

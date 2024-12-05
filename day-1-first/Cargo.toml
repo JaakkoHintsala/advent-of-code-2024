@@ -1,0 +1,9 @@
+[package]
+name = "day-1-first"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+project-root.workspace = true
+
+
