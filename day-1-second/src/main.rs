@@ -13,11 +13,8 @@ fn main() {
     };
 
     let input_path = project_root_path.join(Path::new("day-1-second/input.txt"));
-    let input_path_str = input_path.to_str().unwrap_or_default();
 
-    // print!("{}", input_path_str);
-
-    let input = match read_and_process_input(input_path_str) {
+    let input = match read_and_process_input(input_path.as_path()) {
         Ok(valid_input) => valid_input,
         Err(error) => {
             eprintln!("Error while reading input: {}", error);
@@ -48,9 +45,8 @@ fn main() {
 
 }
 
-fn read_and_process_input(file_path: &str) -> Result<Vec<[u32; 2]>, Box<dyn std::error::Error>> {
-    let path = Path::new(file_path);
-    let file = File::open(&path)?;
+fn read_and_process_input(file_path: &Path) -> Result<Vec<[u32; 2]>, Box<dyn std::error::Error>> {
+    let file = File::open(file_path)?;
     let reader = io::BufReader::new(file);
 
     let mut input: Vec<[u32; 2]> = vec![];
