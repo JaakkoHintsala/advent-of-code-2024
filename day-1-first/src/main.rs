@@ -14,7 +14,7 @@ fn main() {
     let input_path = project_root_path.join(Path::new("day-1-first/input.txt"));
     let input_path_str = input_path.to_str().unwrap_or_default();
 
-    print!("{}", input_path_str);
+    // print!("{}", input_path_str);
 
     let input = match read_and_process_input(input_path_str) {
         Ok(valid_input) => valid_input,
