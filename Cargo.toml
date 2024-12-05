@@ -3,7 +3,7 @@ resolver = "2"
 
 members = [
     
-     "day-1-first", "day-1-second", "day-2-first",
+     "day-1-first", "day-1-second", "day-2-first", "day-2-second",
      
 ]
 
