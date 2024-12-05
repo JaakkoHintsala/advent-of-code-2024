@@ -1,8 +1,10 @@
 [workspace]
 resolver = "2"
 
-members = [ "day-1-first",
-    "day-1-part-1", 
+members = [
+    
+     "day-1-first",
+     
 ]
 
 [workspace.dependencies]
