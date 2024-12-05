@@ -40,14 +40,12 @@ fn main() {
             .or_insert(1u32);
     }
 
-    let mut summa: u32 = 0;
+    let summa: u32 = vec_a.iter().fold(0u32, |summa, vec_a_val| {
+        summa + vec_a_val * map.get(&vec_a_val).unwrap_or_else(|| &0u32)
+    });
 
-    for vec_a_val in vec_a {
-        summa = summa + vec_a_val * map.get(&vec_a_val).unwrap_or_else(|| &0u32);
-    }
-
-    // let summa :u32 = map.iter().map( |entry| entry.1).sum();
     print!("{}", summa)
+
 }
 
 fn read_and_process_input(file_path: &str) -> Result<Vec<[u32; 2]>, Box<dyn std::error::Error>> {
