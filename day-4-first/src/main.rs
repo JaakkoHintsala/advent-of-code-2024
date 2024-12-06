@@ -1,10 +1,9 @@
 use std::collections::HashMap;
-use std::fmt::Write;
 use std::fs::File;
-use std::io::{self, BufRead, Read};
+use std::io::{self, BufRead};
 use std::path::Path;
 
-use regex::{Regex, Replacer};
+use regex::Regex;
 
 fn main() {
     let project_root_path = match project_root::get_project_root() {
@@ -152,7 +151,7 @@ fn get_orientations(
 
 fn read_and_process_input(file_path: &Path) -> Result<Vec<String>, Box<dyn std::error::Error>> {
     let file = File::open(&file_path)?;
-    let mut reader = io::BufReader::new(file);
+    let reader = io::BufReader::new(file);
 
     let mut lines = vec![];
 
