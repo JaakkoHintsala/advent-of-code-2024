@@ -1,0 +1,8 @@
+[package]
+name = "day-4-first"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+project-root.workspace = true
+regex = "1.11.1"
