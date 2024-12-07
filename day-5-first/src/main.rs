@@ -1,8 +1,6 @@
-use std::collections::{HashMap, HashSet, hash_set};
+use std::collections::{HashMap, HashSet};
 use std::fs::File;
-use std::io::{self, BufRead, Read};
-use std::iter;
-use std::num::ParseIntError;
+use std::io::{self, BufRead};
 use std::path::Path;
 
 fn main() {

@@ -1,10 +1,8 @@
 use std::collections::HashMap;
 use std::fs::File;
-use std::io::{self, BufRead, Read};
-use std::num::ParseIntError;
+use std::io::{self, BufRead};
 use std::path::Path;
 
-use regex::Regex;
 
 fn main() {
     let project_root_path = match project_root::get_project_root() {

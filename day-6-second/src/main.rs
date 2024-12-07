@@ -1,12 +1,9 @@
 use std::collections::HashSet;
 use std::fs::File;
-use std::io::{self, BufRead, Read};
-use std::num::ParseIntError;
+use std::io::{self, BufRead};
 use std::path::Path;
 
 use rayon::iter::{IntoParallelRefIterator, ParallelIterator};
-use regex::Regex;
-use strum_macros::EnumIter;
 
 fn main() {
     let project_root_path = match project_root::get_project_root() {
@@ -209,7 +206,7 @@ impl EnvMap {
     }
 
     fn get_block_perms(&self) -> Vec<EnvMap> {
-        let (guard_row, guard_col, dir) = match self.find_guard() {
+        let (guard_row, guard_col, _dir) = match self.find_guard() {
             Ok(tuple) => tuple,
             Err(_) => return vec![],
         };
@@ -242,7 +239,7 @@ impl EnvMap {
         println!();
     }
 
-    fn count_x(&self) -> usize {
+    fn _count_x(&self) -> usize {
         self.data
             .iter()
             .flatten()
