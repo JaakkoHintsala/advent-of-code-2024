@@ -12,7 +12,7 @@ fn main() {
         }
     };
 
-    let input_path = project_root_path.join(Path::new("day-11-first/input.txt"));
+    let input_path = project_root_path.join(Path::new("day-11-second/input.txt"));
 
     let input: Vec<u64> = match read_and_process_input(input_path.as_path()) {
         Ok(valid_input) => valid_input,
