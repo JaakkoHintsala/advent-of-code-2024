@@ -1,0 +1,9 @@
+[package]
+name = "day-9-first"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+project-root.workspace = true
+regex = "1.11.1"
+itertools = "0.13"
