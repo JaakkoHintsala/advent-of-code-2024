@@ -25,6 +25,7 @@ Cargo.lock
 # Added by cargo
 
 /target
+/real-inputs
 /day-1-first/input.txt
 /day-1-second/input.txt
 /day-2-first/input.txt
