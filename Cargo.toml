@@ -3,7 +3,7 @@ resolver = "2"
 
 members = [
     
-     "day-1-first", "day-1-second", "day-10-first", "day-10-second", "day-11-first", "day-11-second", "day-12-first", "day-12-second", "day-13-first", "day-13-second", "day-2-first", "day-2-second", "day-3-first", "day-3-second", "day-4-first", "day-4-second", "day-5-first", "day-5-second", "day-6-first", "day-6-second", "day-7-first", "day-7-second", "day-8-first", "day-8-second", "day-9-first", "day-9-second",
+     "day-1-first", "day-1-second", "day-10-first", "day-10-second", "day-11-first", "day-11-second", "day-12-first", "day-12-second", "day-13-first", "day-13-second", "day-14-first", "day-14-second", "day-2-first", "day-2-second", "day-3-first", "day-3-second", "day-4-first", "day-4-second", "day-5-first", "day-5-second", "day-6-first", "day-6-second", "day-7-first", "day-7-second", "day-8-first", "day-8-second", "day-9-first", "day-9-second",
      
 ]
 
