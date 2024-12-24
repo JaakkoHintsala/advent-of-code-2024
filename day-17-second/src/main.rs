@@ -1,5 +1,4 @@
-use std::cell::{Cell, RefCell};
-use std::collections::HashSet;
+use std::cell::Cell;
 use std::io::{self, Read};
 use std::num::ParseIntError;
 use std::rc::Rc;
